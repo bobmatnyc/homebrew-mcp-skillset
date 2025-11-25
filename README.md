@@ -1,28 +1,41 @@
-# Homebrew Tap for mcp-skillset
+# ⚠️ DEPRECATED - This tap has been consolidated
 
-This is a Homebrew tap for [mcp-skillset](https://github.com/bobmatnyc/mcp-skillset), an MCP server for managing and executing AI skills with dataset support.
+This tap has been deprecated and consolidated into **[bobmatnyc/homebrew-tools](https://github.com/bobmatnyc/homebrew-tools)**.
 
-## Installation
+## Please use the new tap instead:
 
 ```bash
-brew tap bobmatnyc/mcp-skillset
+# Remove old tap (if installed)
+brew untap bobmatnyc/mcp-skillset
+
+# Add new consolidated tap
+brew tap bobmatnyc/tools
+
+# Install mcp-skillset
 brew install mcp-skillset
 ```
 
-## Usage
+## Why the change?
 
-After installation, you can run:
+All bobmatnyc tools are now available in a single tap:
+- claude-mpm
+- mcp-vector-search
+- mcp-ticketer
+- mcp-skillset
+- ai-trackdown-pytools
+
+This makes it easier to discover and install all tools.
+
+## Migration
+
+The formula is identical, just run:
 
 ```bash
-mcp-skillset --version
+brew uninstall mcp-skillset  # If installed from old tap
+brew tap bobmatnyc/tools
+brew install mcp-skillset
 ```
 
-For more information, see the [main repository](https://github.com/bobmatnyc/mcp-skillset).
+---
 
-## Updating the Formula
-
-When a new version is released:
-
-1. Update the `version` and `sha256` in `Formula/mcp-skillset.rb`
-2. Commit and push the changes
-3. Users can update with `brew upgrade mcp-skillset`
+**New tap**: https://github.com/bobmatnyc/homebrew-tools
