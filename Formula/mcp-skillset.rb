@@ -3,7 +3,7 @@ class McpSkillset < Formula
 
   desc "MCP server for managing and executing AI skills with dataset support"
   homepage "https://github.com/bobmatnyc/mcp-skillset"
-  url "https://files.pythonhosted.org/packages/source/m/mcp-skillset/mcp-skillset-0.5.1.tar.gz"
+  url "https://files.pythonhosted.org/packages/source/m/mcp-skillset/mcp_skillset-0.5.1.tar.gz"
   sha256 "de320ea9b26de2f9aff530f4b1b9dafefc5daf915229a7b7da970928eea90c94"
   license "MIT"
 
